@@ -9,7 +9,22 @@ import SwiftUI
 
 struct PasscodeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 48) {
+            VStack(spacing: 24) {
+                Text("Enter Passcode")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                
+                Text("Please enter your 4-digit pin to access your account")
+                    .font(.subheadline)
+                    .multilineTextAlignment(.center)
+            }
+            .padding(.top)
+            
+            // indicator view
+            
+            // numberpad view
+        }
     }
 }
 
