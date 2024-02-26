@@ -23,7 +23,11 @@ struct PasscodeView: View {
             
             // indicator view
             
+            Spacer()
+            
             // numberpad view
+            
+            NumberPadView()
         }
     }
 }
