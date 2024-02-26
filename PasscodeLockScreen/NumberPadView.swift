@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct NumberPadView: View {
-    let columns: [GridItem] = [
+    @Binding var passcode: String
+    
+    private let columns: [GridItem] = [
         .init(),
         .init(),
         .init()
@@ -55,5 +57,5 @@ struct NumberPadView: View {
 }
 
 #Preview {
-    NumberPadView()
+    NumberPadView(passcode: .constant(""))
 }
