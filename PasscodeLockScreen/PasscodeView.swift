@@ -17,7 +17,7 @@ struct PasscodeView: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                 
-                Text("Please enter your 4-digit pin to access your account")
+                Text("Please enter your 4-digit pin to access your account.")
                     .font(.subheadline)
                     .multilineTextAlignment(.center)
             }
@@ -31,7 +31,7 @@ struct PasscodeView: View {
             
             // numberpad view
             
-            NumberPadView()
+            NumberPadView(passcode: $passcode)
         }
     }
 }
